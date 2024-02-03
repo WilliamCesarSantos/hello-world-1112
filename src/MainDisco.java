@@ -20,7 +20,7 @@ public class MainDisco {
                 "Wesley"
         );
 
-        ExecutorDeDisco executor = new ExecutorDeDisco();
+        ExecutorDeDisco executor = new ExecutorDeDisco(110, 30);
         executor.ligar();
         executor.executarFaixa();
     }

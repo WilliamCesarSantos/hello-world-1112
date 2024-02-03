@@ -1,4 +1,7 @@
-Criar a representação de um executor de disco (aparelho de som).
+1 - Criar a representação de um executor de disco (aparelho de som).
  - Lembre-se de mapear as caracteristicas
  - Lembre-se de criar as ações possíveis.
     - As ação não precisam ser implementadas, apenas declaradas.
+
+2 - Analise a sua classe, aquela criada para representar um executor de disco, e crie os
+construtores que julgar necessário. Sua classe deve ter no mínimo um construtor, mesmo que vazio.

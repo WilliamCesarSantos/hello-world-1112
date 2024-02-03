@@ -5,10 +5,30 @@ public class ExecutorDeDisco {
     public Disco[] bandeja;
     public Integer volume;
 
-    public void inserirDisco() {
+    public ExecutorDeDisco(Integer voltagem, Integer voltagemInterna) {
+        this.voltagem = voltagem;
+        this.voltagemInterna = voltagemInterna;
+        this.bandeja = new Disco[3];
+        this.volume = 0;
     }
 
-    public void removerDisco(){}
+    public void inserirDisco(Disco disco, Integer indice) {
+        if (indiceValido(indice)) {
+            bandeja[indice] = disco;
+        }
+    }
+
+    public void removerDisco(Integer indice){
+        if (indiceValido(indice)) {
+            bandeja[indice] = null;
+        }
+    }
+
+    public Boolean indiceValido(Integer indice) {
+        //Seria o mesmo que um if para checar a condição
+        Boolean valido = indice > -1 && indice < bandeja.length;
+        return valido;
+    }
 
     public void executarFaixa() {
 
