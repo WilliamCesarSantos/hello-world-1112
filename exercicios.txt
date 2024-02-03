@@ -1,0 +1,4 @@
+Criar a representação de um executor de disco (aparelho de som).
+ - Lembre-se de mapear as caracteristicas
+ - Lembre-se de criar as ações possíveis.
+    - As ação não precisam ser implementadas, apenas declaradas.
