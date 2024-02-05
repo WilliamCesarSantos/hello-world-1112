@@ -5,3 +5,8 @@
 
 2 - Analise a sua classe, aquela criada para representar um executor de disco, e crie os
 construtores que julgar necessário. Sua classe deve ter no mínimo um construtor, mesmo que vazio.
+
+3 - Executar o disco
+ - Criar no minimo um disco
+ - Criar um executor de disco
+ - Reproduzir a faixa um do disco. Lembre-se que pode ser necessário adicionar o disco no executor primeiro.

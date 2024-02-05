@@ -1,28 +1,37 @@
 public class MainDisco {
 
     public static void main(String[] args) {
-        Disco disco = new Disco(
-                "Iron man",
-                "Toddynho",
-                "Forró",
-                2000,
-                12
+        Disco discoChicleteiro = new Disco(
+                "Chicleteiro",
+                "Bell Marques",
+                "Samba/Axé",
+                2022,
+                22
         );
-        disco.fornecerDados();
 
-        Disco discoDois = new Disco(
-                "Iron man",
-                "Toddynho",
+        Disco discoCarripicho = new Disco(
+                "Festa do boi",
+                "Carrapicho",
                 "Forró",
-                2000,
-                12,
-                "Avioes",
-                "Wesley"
+                1995,
+                15
+        );
+
+        Disco discoGaucho = new Disco(
+                "A marca do sul",
+                "Os serranos",
+                "Gauchesca",
+                1995,
+                12
         );
 
         ExecutorDeDisco executor = new ExecutorDeDisco(110, 30);
         executor.ligar();
-        executor.executarFaixa();
+        executor.inserirDisco(discoChicleteiro, 0);
+        executor.inserirDisco(discoCarripicho, 1);
+        executor.inserirDisco(discoGaucho, 2);
+        executor.selecionarDisco(2);
+        executor.reproduzir();
     }
 
 }

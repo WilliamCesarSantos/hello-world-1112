@@ -38,7 +38,8 @@ public class Disco {
         this.participacoes = participacoes;
     }
 
-    //Acoes são descritas como métodos
+    // Acoes são descritas como métodos
+    // Visibilidade + tipo de retorno + nome do método
     public String fornecerDados() {
         return "la la la la la la la la";
     }
