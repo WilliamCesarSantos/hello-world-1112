@@ -1,13 +1,11 @@
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-
 public class ExecutorDeDisco {
 
-    public Integer voltagem;
-    public Integer voltagemInterna;
-    public Disco[] bandeja;
-    public Disco discoSelecionado;
-    public Integer volume;
+    //Modificadores de acesso[public, private, protected, default(package)]
+    private Integer voltagem;
+    private Integer voltagemInterna;
+    private Disco[] bandeja;
+    private Disco discoSelecionado;
+    private Integer volume;
 
     public ExecutorDeDisco(Integer voltagem, Integer voltagemInterna) {
         this.voltagem = voltagem;
@@ -40,8 +38,9 @@ public class ExecutorDeDisco {
     }
 
     public void selecionarDisco(Integer posicao) {
-        indiceValido(posicao);
-        discoSelecionado = bandeja[posicao];
+        if (indiceValido(posicao)) {
+            discoSelecionado = bandeja[posicao];
+        }
     }
 
     public void reproduzir() {

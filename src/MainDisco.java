@@ -8,6 +8,7 @@ public class MainDisco {
                 2022,
                 22
         );
+        discoChicleteiro.genero = "Pagode";
 
         Disco discoCarripicho = new Disco(
                 "Festa do boi",
@@ -32,6 +33,7 @@ public class MainDisco {
         executor.inserirDisco(discoGaucho, 2);
         executor.selecionarDisco(2);
         executor.reproduzir();
+        executor.aumentarVolume();
     }
 
 }
