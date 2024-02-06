@@ -10,3 +10,19 @@ construtores que julgar necessário. Sua classe deve ter no mínimo um construto
  - Criar no minimo um disco
  - Criar um executor de disco
  - Reproduzir a faixa um do disco. Lembre-se que pode ser necessário adicionar o disco no executor primeiro.
+
+4 - Análise a classe Disco e ExecutorDeDisco, levante quais as caracteristicas e as torne privadas.
+Na classe ExecutorDeDisco existe uma ação(método) que também deve ser privado. Ações podem ser privadas para
+acesso apenas do objeto.
+
+5 - Criar executor de disco com as seguintes caracteristicas:
+ - Multiplos discos
+ - Seleção de disco
+ - Controle de volume (aumentar e diminuir)
+ - Controle de faixa (tocar desde a primeira, avançar, retroceder)
+ - Controle de reprodução
+    - Reproduzir
+    - Pausar
+    - Parar
+Lembre-se que os método devem ser implementados e não apenas declarados.
+Utilize o console para interação com o usuário.

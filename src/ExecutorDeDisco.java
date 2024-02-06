@@ -1,8 +1,12 @@
 public class ExecutorDeDisco {
 
     //Modificadores de acesso[public, private, protected, default(package)]
-    private Integer voltagem;
-    private Integer voltagemInterna;
+    // Modificador public - Todos os objetos tem acesso.
+    // Modificador private - Apenas o próprio objeto tem acesso
+    // Modificador protected - Tem acesso o próprio objeto, seus herdeiros e quem esta no mesmo pacote
+    // Modificador default(package) - Tem acesso próprio objeto e quem estiver no mesmo pacote
+    private final Integer voltagem;
+    private final Integer voltagemInterna;
     private Disco[] bandeja;
     private Disco discoSelecionado;
     private Integer volume;
@@ -31,7 +35,7 @@ public class ExecutorDeDisco {
         return discoRemovido;
     }
 
-    public Boolean indiceValido(Integer indice) {
+    private Boolean indiceValido(Integer indice) {
         //Seria o mesmo que um if para checar a condição
         Boolean valido = indice > -1 && indice < bandeja.length;
         return valido;

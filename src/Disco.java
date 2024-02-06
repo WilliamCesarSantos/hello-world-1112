@@ -1,13 +1,13 @@
 public class Disco {
 
     //Atributos ou propriedades descrevem as caracteristicas de um objeto
-    public String nome;
-    public String autor;
-    public String genero;
-    public Integer anoLancamento;
-    public Integer numeroFaixas;
-    public String subtitulo;
-    public String participacoes;
+    private final String nome;
+    private final String autor;
+    private final String genero;
+    private final Integer anoLancamento;
+    private final Integer numeroFaixas;
+    private final String subtitulo;
+    private final String participacoes;
 
     //Assinatura de método (nome + parametros)
     public Disco(

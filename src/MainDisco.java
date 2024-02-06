@@ -8,7 +8,6 @@ public class MainDisco {
                 2022,
                 22
         );
-        discoChicleteiro.genero = "Pagode";
 
         Disco discoCarripicho = new Disco(
                 "Festa do boi",
