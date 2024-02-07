@@ -44,4 +44,32 @@ public class Disco {
         return "la la la la la la la la";
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public Integer getAnoLancamento() {
+        return anoLancamento;
+    }
+
+    public Integer getNumeroFaixas() {
+        return numeroFaixas;
+    }
+
+    public String getSubtitulo() {
+        return subtitulo;
+    }
+
+    public String getParticipacoes() {
+        return participacoes;
+    }
+
 }
