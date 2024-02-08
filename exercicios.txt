@@ -26,3 +26,6 @@ acesso apenas do objeto.
     - Parar
 Lembre-se que os método devem ser implementados e não apenas declarados.
 Utilize o console para interação com o usuário.
+
+6 - Crie uma especificação(herança) para Disco (Disco de vinil ou Disco compacto) e,
+também crie uma especificação de executor para reproduzir o disco que você criou.
