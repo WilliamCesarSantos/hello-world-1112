@@ -19,8 +19,7 @@ public abstract class ExecutorDeDisco {
 
     public abstract void reproduzir();
 
-    protected void reproduzir(Disco disco) {
-        String dados = disco.fornecerDados();
+    protected void reproduzir(String dados) {
         System.out.println("Reproduzindo: " + dados);
     }
 

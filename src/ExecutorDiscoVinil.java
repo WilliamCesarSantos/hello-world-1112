@@ -1,6 +1,6 @@
 public class ExecutorDiscoVinil extends ExecutorDeDisco{
 
-    private DiscoVinil discoVinil;
+    private DiscoVinil vinilDentroDoExecutor;
 
     protected ExecutorDiscoVinil(Integer voltagem, Integer voltagemInterna) {
         super(voltagem, voltagemInterna);
@@ -8,19 +8,21 @@ public class ExecutorDiscoVinil extends ExecutorDeDisco{
 
     @Override
     public void inserirDisco(Disco disco) {
-        this.discoVinil = (DiscoVinil) disco;
+        this.vinilDentroDoExecutor = (DiscoVinil) disco;
     }
 
     @Override
     public Disco removerDisco() {
-        var discoRemovido = discoVinil;
-        this.discoVinil = null;
+        var discoRemovido = vinilDentroDoExecutor;
+        this.vinilDentroDoExecutor = null;
         return discoRemovido;
     }
 
     @Override
     public void reproduzir() {
-        super.reproduzir(discoVinil);
+        if (vinilDentroDoExecutor != null) {
+            super.reproduzir(vinilDentroDoExecutor.fornecerDados());
+        }
     }
 
 }

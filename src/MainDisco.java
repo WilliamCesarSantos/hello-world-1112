@@ -43,6 +43,23 @@ public class MainDisco {
         ExecutorDiscoVinil executorDiscoVinil = new ExecutorDiscoVinil(110, 30);
         executorDiscoVinil.inserirDisco(vinil);
         executar(executorDiscoVinil);
+
+        var teste = new ExecutorDeDisco(110, 30) {
+            @Override
+            public void inserirDisco(Disco disco) {
+
+            }
+
+            @Override
+            public Disco removerDisco() {
+                return null;
+            }
+
+            @Override
+            public void reproduzir() {
+
+            }
+        };
     }
 
     public static void executar(ExecutorDeDisco executor) {
